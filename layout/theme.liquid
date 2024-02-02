@@ -13,8 +13,9 @@
     {{ 'application.js' | asset_url | script_tag }}
   </head>
   <body>
+    {%section 'header' %}
     <main role="main">
-      {%section 'header' %}
+      
       {{ content_for_layout }}
     </main>
   </body>
